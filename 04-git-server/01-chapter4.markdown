@@ -318,6 +318,7 @@ W ten sposób możesz ustawić oparty na HTTP dostęp odczytu do swoich projekt�
 Teraz, gdy już podstawy odczytu  i zapisu są dostępne tylko dla Twojego projektu, możesz założyć prostą internetową wizualizacje. Do tego celu Git wyposażony jest w skrypt CGI o nazwie GitWeb. Jak widać GitWeb stosowany jest w miejscach takich jak: 'http://git.kernel.org' (patrz rys. 4-1).
 
 ![Nie można wczytać obrazka](1.png)
+
 Rysunek 4-1.GitWeb internetowy interfejs użytkownika.
 
 Jeśli chcesz zobaczyć jak GitWeb będzie wyglądał dla Twojego projektu, Git posiada polecenie do uruchamiania tymczasowej instancji, pod warunkiem, że posiadasz lekki serwer taki jak 'lighttpd' lub 'webrick'. Na komputerach z zainstalowanym linuxem 'lighttpd' jest bardzo często instalowany więc należy go uruchomić wpisując 'git instweb' w ktlogu projektu. Jeśli używasz komputera Mac, Leopard jest automatycznie instlowany z Ruby więc 'webrick' może być najlepszym rozwiązaniem. Aby rozpocząć 'instaweb' bez tymczasowej instancji, należy uruchomić go z opcją '--httpd'.
@@ -607,13 +608,8 @@ Możesz kontrolować uprawnienia na poziomie "ref". W poniższym przykładzie st
 
 	    RW+                     = @admins
 
-Wyrażenie po `RW` lub `RW+` jest wyrażeniem regularnym (regex)
-
-#The expression after the `RW` or `RW+` is a regular expression #(regex) 
-#that the refname (ref) being pushed is matched against. Nie bardzo #wiem jak to przetłumaczyć to zdanie
-
-Dlatego nazywamy je "refex" ! Oczywiście refex jest potężniejsze niż 
-ukazany tutaj przykład. Dlatego nie nadużywaj tego jeżeli nie czyjesz się wystarczająco pewnie z wyrażeniami regex w perl.
+Wyrażenie po `RW` lub `RW+` jest wyrażeniem regularnym (regex). Dlatego nazywamy je "refex" ! Oczywiście refex jest potężniejsze niż 
+ukazany tutaj przykład. Dlatego nie nadużywaj tego jeżeli nie czujesz się wystarczająco pewnie z wyrażeniami regex w perl.
 
 Równiez jak już prawdopodobnie zgadłeś, prefiksy Gitolite `refs/heads/` są składniowym udogodnieniem jeżeli refex nie rozpoczyna się od `refs/`.
 
