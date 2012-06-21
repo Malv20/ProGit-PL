@@ -1,0 +1,4 @@
+ProGit-PL
+=========
+
+Polish translation
