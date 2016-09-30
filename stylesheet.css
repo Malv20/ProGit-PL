@@ -22,8 +22,8 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  margin: 20;
-  padding: 0;
+  margin: 30;
+  padding: 5;
   border: 0;
   font: inherit;
   vertical-align: baseline;
